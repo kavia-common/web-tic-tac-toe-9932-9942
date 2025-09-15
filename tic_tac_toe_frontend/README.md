@@ -1,82 +1,40 @@
-# Lightweight React Template for KAVIA
+# Neon Cyber Tic Tac Toe (React)
 
-This project provides a minimal React template with a clean, modern UI and minimal dependencies.
+A bold, high-contrast Tic Tac Toe experience themed in Neon Cyber: dark surfaces with neon green and yellow accents. Two-player local play with win/tie detection, undo, and reset.
 
 ## Features
+- 2-player local gameplay (X starts)
+- Win and tie detection with animated highlighting of the winning line
+- Current player highlighting with badges
+- Reset and Undo controls
+- Bold, rounded, neon-styled UI strictly following the Neon Cyber theme
 
-- **Lightweight**: No heavy UI frameworks - uses only vanilla CSS and React
-- **Modern UI**: Clean, responsive design with KAVIA brand styling
-- **Fast**: Minimal dependencies for quick loading times
-- **Simple**: Easy to understand and modify
+## Theme
+- Background: `#0F172A`
+- Surface: `#1F2937`
+- Primary (neon green): `#10B981`
+- Secondary (yellow): `#F59E0B`
+- Text: `#FFFFFF`
+- Error: `#EF4444`
 
-## Getting Started
+All tokens are defined in `src/App.css` and applied consistently.
 
-In the project directory, you can run:
+## Layout
+- Player indicators above the 3x3 board
+- Centered grid board
+- Status and controls below the board
+- Responsive down to small screens
+
+## Scripts
 
 ### `npm start`
-
-Runs the app in development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Starts development server at http://localhost:3000
 
 ### `npm test`
-
-Launches the test runner in interactive watch mode.
+Runs the test suite.
 
 ### `npm run build`
+Builds production assets.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-## Customization
-
-### Colors
-
-The main brand colors are defined as CSS variables in `src/App.css`:
-
-```css
-:root {
-  --kavia-orange: #E87A41;
-  --kavia-dark: #1A1A1A;
-  --text-color: #ffffff;
-  --text-secondary: rgba(255, 255, 255, 0.7);
-  --border-color: rgba(255, 255, 255, 0.1);
-}
-```
-
-### Components
-
-This template uses pure HTML/CSS components instead of a UI framework. You can find component styles in `src/App.css`. 
-
-Common components include:
-- Buttons (`.btn`, `.btn-large`)
-- Container (`.container`)
-- Navigation (`.navbar`)
-- Typography (`.title`, `.subtitle`, `.description`)
-
-## Learn More
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Notes
+No UI frameworks are used; styling is implemented via vanilla CSS for performance and control. Adjust sizes by modifying the CSS variables and board sizing in `src/App.css`.
